@@ -35,5 +35,5 @@ def check_summary(summary: Summary):
         [embeddings[1]]
     )
 
-    print(similarity)
-    return {"score": similarity}
+    score = float(similarity[0][0])
+    return {"score": score}
